@@ -8,7 +8,7 @@ const NB_IMAGES = 12;
 const BASE_CLK = 2;
 let try_click = BASE_CLK;
 
-btn.innerHTML = `Changer le fond - ${try_click-1}/${NB_IMAGES-1}`;
+btn.innerHTML = `Changer le fond  - ${try_click-1}/${NB_IMAGES-1}`;
 
 btn.addEventListener('click', function() {
     if(try_click === NB_IMAGES) {
@@ -44,7 +44,7 @@ const NB_LOGO = 3;
 const BASE_CLK_2 = 1;
 let change_logo = BASE_CLK_2;
 
-btn_logo.innerHTML = `Changer le fond - ${change_logo}/${NB_LOGO}`;
+btn_logo.innerHTML = `Changer le logo - ${change_logo}/${NB_LOGO}`;
 
 btn_logo.addEventListener('click', function() {
     if(change_logo === NB_LOGO) {
@@ -53,7 +53,7 @@ btn_logo.addEventListener('click', function() {
         change_logo++
     }
 
-    btn_logo.innerHTML = `Changer le fond - ${change_logo}/${NB_LOGO}`;
+    btn_logo.innerHTML = `Changer le logo - ${change_logo}/${NB_LOGO}`;
 
     const the_svg = document.querySelector(`#svg${change_logo}`);
 
